@@ -153,13 +153,12 @@
         </div>
     </header>
 
-    <!-- PUBLICATIONS (sans images) -->
+    <!-- PUBLICATIONS -->
     <section id="publications" class="bg-white border-y border-slate-100 py-14">
         <div class="max-w-screen-xl mx-auto px-6">
             <div class="flex items-end justify-between mb-8">
                 <div>
                     <div class="section-header mb-1">Selected Publications</div>
-                    <p class="text-slate-500 text-sm">Long-form analysis in English and French</p>
                 </div>
             </div>
 
@@ -233,7 +232,7 @@
         </div>
     </section>
 
-    <!-- ABOUT (version exacte fournie par toi) -->
+    <!-- ABOUT -->
     <section id="about" class="max-w-screen-xl mx-auto px-6 py-16">
         <div class="max-w-3xl">
             <div class="section-header">About</div>
@@ -313,41 +312,4 @@
 
         if (mobileBtn && mobileMenu) {
             mobileBtn.addEventListener('click', () => {
-                const isHidden = mobileMenu.classList.contains('hidden');
-                mobileMenu.classList.toggle('hidden');
-                mobileBtn.setAttribute('aria-expanded', !isHidden);
-               
-                const icon = mobileBtn.querySelector('i');
-                if (icon) {
-                    icon.classList.toggle('fa-bars');
-                    icon.classList.toggle('fa-times');
-                }
-            });
-
-            mobileLinks.forEach(link => {
-                link.addEventListener('click', () => {
-                    mobileMenu.classList.add('hidden');
-                    mobileBtn.setAttribute('aria-expanded', 'false');
-                    const icon = mobileBtn.querySelector('i');
-                    if (icon) {
-                        icon.classList.add('fa-bars');
-                        icon.classList.remove('fa-times');
-                    }
-                });
-            });
-        }
-
-        document.addEventListener('click', (e) => {
-            if (!mobileBtn.contains(e.target) && !mobileMenu.contains(e.target)) {
-                mobileMenu.classList.add('hidden');
-                mobileBtn.setAttribute('aria-expanded', 'false');
-                const icon = mobileBtn.querySelector('i');
-                if (icon) {
-                    icon.classList.add('fa-bars');
-                    icon.classList.remove('fa-times');
-                }
-            }
-        });
-    </script>
-</body>
-</html>
+                co
