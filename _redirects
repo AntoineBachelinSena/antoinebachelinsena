@@ -1,0 +1,6 @@
+/tag/*        /  301
+/category/*   /  301
+/author/*     /  301
+/feed         /  301
+/feed/*       /  301
+/wp-*         /  301
